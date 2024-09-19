@@ -1,0 +1,387 @@
+body {
+  overflow-x: hidden;
+}
+
+.primary-color {
+  color: #dd8e1b;
+}
+
+.sec-color {
+  color: #af6c07;
+}
+
+.navbar-brand {
+  color: #252c63;
+  ;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 22%;
+  z-index: 10;
+}
+
+
+.carousel-item {
+  height: 32rem;
+  background: black;
+}
+
+.carousel-item img {
+  opacity: .35;
+}
+
+.btn-primary {
+  background-color: #dd8e1b;
+  border-color: #dd8e1b;
+}
+
+.btn-primary:hover {
+  background-color: #af6c07;
+  border-color: #af6c07;
+}
+
+.certs-logo {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@media (max-width: 768px) {
+  .certs-logo {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+hr.border-warning {
+  border-color: #dd8e1b !important;
+  width: 15%;
+  margin: 3rem auto;
+
+}
+
+.cert-item {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: #6d6d6d;
+  text-align: left;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+
+.cert-img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  margin-bottom: 10px;
+}
+
+.cert-caption {
+  padding: 1rem 0;
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  margin-right: calc(-50vw + 50%);
+
+}
+
+footer {
+  max-width: 100%;
+}
+
+/* Services Cards */
+
+.left {
+
+  border-radius: 50%;
+  height: 3rem;
+
+}
+
+.right {
+  border-radius: 50%;
+  height: 3rem;
+}
+
+/* General styles for both instances */
+
+.scroll-images {
+  position: relative;
+  width: 100%;
+
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.courses .card-img {
+  min-height: 400px;
+}
+
+.child {
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+  min-width: 300px;
+  min-height: 200px;
+  margin: 1px 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+}
+
+
+.scroll-images.instance-2 .child {
+  flex: 0 0 auto;
+  max-width: 410px;
+}
+
+@media (max-width: 768px) {
+  .scroll-images.instance-2 .child {
+    max-width: 310px;
+  }
+
+  .child img.cert-img {
+    margin-top: 0;
+  }
+}
+
+
+
+.scroll-images::-webkit-scrollbar {
+  width: 5px;
+  background-color: #aaa;
+}
+
+.scroll-images::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.accordion-button {
+  background-color: #efefef;
+  color: black;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #dd8e1b;
+  color: black;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: 1px solid #dd8e1b;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.card .cert-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 4rem;
+
+}
+
+.footer {
+  background-color: #0d0e3f;
+  color: white;
+}
+
+/* Courses Styles */
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  /* Adjust height as needed */
+  position: relative;
+  color: white;
+}
+
+.bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  /* Ensures the text is above the overlay */
+  text-align: center;
+  color: white;
+  /* Adjust text color as needed */
+  padding: 20px;
+}
+
+
+/* enroll styles */
+
+.nav-tabs .nav-link {
+  color: black;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: #dd8e1b;
+  border: none;
+
+}
+
+.nav-tabs .nav-link:hover {
+  color: #dd8e1b;
+  border: none;
+
+}
+
+.course-cart {
+  background-color: white;
+  box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.15);;
+}
+
+
+@media (max-width: 768px) {
+  .course-cart {
+    margin-top: 30px;
+  }
+}
+
+.course-cart p {
+  background-color: #dd8e1b;
+  display: inline-block;
+  color: white;
+  padding: 0.25em 0.5em;
+  margin: 0.75em 0;
+  border-radius: 0.25em;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.course-cart hr {
+  border-style: dashed;
+  border-top-width: 2px;
+}
+
+.contact-form fieldset {
+  border: none;
+  position: relative;
+}
+
+.contact-form label {
+  position: absolute;
+  left: calc(5% + 10px);
+  top: calc(5% - 15px);
+  background-color: white;
+  font-size: 0.85rem;
+  padding: 0 0.5em;
+  pointer-events: none;
+}
+
+.contact-form label span {
+  color: red;
+}
+
+.contact-form input {
+  width: 100%;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dd8e1b;
+  margin-bottom: 1.5em;
+}
+
+.course-type {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-align: left;
+}
+
+
+.course-type label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 600;
+}
+
+.course-type p {
+  margin-left: auto;
+  background-color: transparent;
+  color: black;
+}
+
+.course-type .date {
+  margin-left: auto;
+  border-color: #dd8e1b;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  width: 110px;
+  text-align: center;
+}
+
+.further-course a {
+  text-decoration: none;
+  color: black;
+}
+
+.further-course a:hover {
+  color: #af6c07
+}
+
+.course-card .child {
+  min-width: 410px;
+  min-height: 550px;
+}
+
+@media (max-width:512px) {
+  .course-card .child {
+    min-width: 330px;
+    min-height: 500px;
+  }
+}
