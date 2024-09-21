@@ -43,6 +43,15 @@ a {
   border-color: #dd8e1b;
 }
 
+.btn-outline-warning{
+  border-color: #dd8e1b;
+  color: black;
+}
+.btn-outline-warning:hover{
+  background-color: #dd8e1b;
+  color: white;
+}
+
 .btn-primary:hover {
   background-color: #af6c07;
   border-color: #af6c07;
@@ -251,6 +260,14 @@ footer {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+.category{
+background-color: #dd8e1b;
+max-width: fit-content;
+max-height: 40px;
+top: 10px;
+right: 10px;
 }
 
 .overlay {

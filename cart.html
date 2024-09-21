@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/cart.css
+">
 </head>
 
 <body style="padding-top: 0">
@@ -46,65 +48,105 @@
         </nav>
     </header>
 
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-8 col-md-12 cart">
+                <div class="title mb-5">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="fw-semibold">Your Cart</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center d-flex">
+                        <div class="col-3">
+                            <img class="img-fluid" src="images/Coursephoto 1.png">
+                        </div>
+                        <div class="col-5">
+                            <div class="row fw-semibold">Course Title </div>
+                            <div class="row"></div>
+                        </div>
 
+                        <div class="col-2">
+                            <p class="text-end">&dollar; 999.00</p>
+                        </div>
+                        <div class="col-2 text-end">
+                            <button><span class=" close fs-4">&#10005;</span></button>
+                        </div>
 
-
-
-
-
-
-
-
-    <footer>
-
-        <div class=" full-width footer">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top ">
-                <div class="col mb-3">
-
+                    </div>
                 </div>
 
-                <div class="col mb-3">
-                    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                        <h1 class="primary-color font-monospace">Brand</h1>
-                    </a>
-                    <p class="text-white">&copy; 2024</p>
+
+                <div class="back-to-shop">
+                    <a href="/index.html">&leftarrow;<span class="text-muted">Back to Home</span></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 summary ">
+                <div class="d-flex py-3 align-items-center">
+                    <div class="">
+                        <h5>Total Price</h5>
+                    </div>
+                    <div class="ps-3">
+                        <h3 class="fw-semibold">&euro; 999.00</h3>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <h5>Total Items:</h5>
+                    <h5 class="ps-2">
+                        <span>3</span>
+                    </h5>
                 </div>
 
-                <div class="col mb-3">
-                    <h5 class="primary-color">Section</h5>
-                    <ul class="nav flex-column text-white">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
-                    </ul>
-                </div>
+                <hr>
+                <form action="">
+                    <div class="d-flex justify-content-around pb-4">
+                        <p>Select payment Method:</p>
+                        <div>
+                            <input type="radio" class="btn-check" name="payment-option" id="master-card"
+                                autocomplete="off">
+                            <label class="btn btn-outline-dark p-0" for="master-card"><img
+                                    src="images/payment-methods/mastercard.png" width="50px" alt="master-card"></label>
 
-                <div class="col mb-3">
-                    <h5 class="primary-color">Section</h5>
-                    <ul class="nav flex-column text-white">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
-                    </ul>
-                </div>
+                            <input type="radio" class="btn-check" name="payment-option" id="visa-card"
+                                autocomplete="off">
+                            <label class="btn btn-outline-dark p-0" for="visa-card">
+                                <img class="pt-2 pe-2" src="images/payment-methods/visa.png" width="50px"
+                                    alt="visa-card"></label>
+                        </div>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <label for="FirstName">First Name</label>
+                            <input type="text" placeholder="Enter Your First Name" required="" id="FirstName"
+                                name="FirstName" value="">
+                        </fieldset>
+                        <fieldset>
+                            <label for="LastName">Last Name </label>
+                            <input type="text" placeholder="Enter Your Last Name" id="LastName" name="LastName"
+                                value="">
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Enter Your Email" required="" id="email" name="email"
+                                value="">
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Enter Your Password" required="" id="password"
+                                name="password" value="">
+                        </fieldset>
+                    </div>
+                    <input type="submit" class="btn btn-primary w-100 py-3" value="Purchase"></input>
+                </form>
 
-                <div class="col mb-3">
-                    <h5 class="primary-color">Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
-                    </ul>
-                </div>
-            </footer>
+
+            </div>
         </div>
-    </footer>
+
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

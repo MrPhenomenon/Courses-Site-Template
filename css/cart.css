@@ -1,0 +1,105 @@
+.cart {
+    background-color: #fff;
+    padding: 4vh 5vh;
+}
+
+
+.summary {
+    background-color: #ddd;
+    padding: 4vh;
+
+    max-width: 30rem;
+    color: #2d2f31
+}
+
+
+.summary .col-2 {
+    padding: 0;
+}
+
+.summary .col-10 {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.title b {
+    font-size: 1.5rem;
+}
+
+.main {
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+@media (max-width:512px) {
+    .col{
+        padding-left:0;
+        padding-right: 0;
+    }
+  }
+
+a {
+    padding: 0 1vh;
+}
+
+.close {
+    margin-left: auto;
+    font-size: 0.7rem;
+}
+
+
+.back-to-shop {
+    margin-top: 4.5rem;
+}
+
+p {
+    font-size: 15px;
+    color: #212529;
+    margin-bottom: 0;
+}
+
+h1 {
+
+    color: #2d2f31;
+}
+
+hr {
+    margin-top: 1.25rem;
+}
+
+form label{
+    height: 35px;
+    min-width: 60px;
+}
+
+select {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 2vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+}
